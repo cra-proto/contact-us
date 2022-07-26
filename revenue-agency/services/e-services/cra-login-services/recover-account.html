@@ -17,8 +17,8 @@
          <!-- Meta data -->
          <!-- Meta data-->
          <!-- Load closure template scripts -->
-         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
-         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_32/cdts/compiled/soyutils.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_32/cdts/compiled/wet-en.js"></script>
          <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
          <link href="https://test.canada.ca/covid-19-guidance/proto/css/cews.css" rel="stylesheet">
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
@@ -130,6 +130,17 @@
       .dataTables_filter {
         margin-left: 8px;
       }
+
+      h1.gc-thickline::after {
+        border-bottom: 0.18em solid #af3c43;
+        content: "";
+        display: block;
+        padding-bottom: 8px;
+        width: 70px;
+      }
+      h1.gc-thickline {
+          border-bottom: none;
+      }
       </style>   
    </head>
       <body vocab="http://schema.org/" typeof="WebPage">
@@ -189,7 +200,32 @@
 
       <h2 id="h_1">Lost password</h2>
       <p>How you recover a password or user ID depends on how you are registered to sign in:</p>
-      <div class="cnjnctn-type-or cnjnctn-sm">
+      <details>
+        <summary>Sign-in with a CRA user ID</summary>
+        <h3>To verify your identify, you will need:</h3>
+        <ul class="fa-ul">
+          <li><span class="fas fa-check text-success fa-li"></span> Your User ID</li>
+          <li><span class="fas fa-check text-success fa-li"></span> Answers to the security questions you made when you registered</li>
+        </ul>
+        <h3>Steps to create a new password</h3>
+        <p>Follow these steps to create a new password for your account:</p>
+        <ol>
+          <li>Go to <a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">My Account for Individuals</a></li>
+          <li>Select "Sign in with your CRA user ID and password"</li>
+          <li>On the CRA sign-in page, select "Forgot your password?"</li>
+          <li>Follow the instructions to create a new password</li>
+        </ol>
+      </details>
+      <details>
+        <summary>Sign-in through your financial institution or province</summary>
+        <h3>CRA does not have your password</h3>
+        <p>When you use your online banking or provincial credential, the information you enter and the identity of the partner institution are not shared with the government service you are trying to access. Similarly, information about the government service being accessed is not shared with your sign-in partner. No personally identifying information or banking or provincial details are ever shared.</p>
+        <h3>Change your password with your financial institution or province</h3>
+        <p>As you are signing in through the financial institution or province, you will need to reset your password with that institution or province that you deal with.</p>
+      </details>
+
+
+      <!-- <div class="cnjnctn-type-or cnjnctn-sm">
           <div class="cnjnctn-col">
               <h3 class="h4 mrgn-tp-sm text-muted"> Sign-in with a CRA ID and password<span class="wb-inv">: Option 1 of 2</span> </h3>
               <h4>To verify your identify, you will need:</h4>
@@ -213,11 +249,41 @@
               <h4>Change your password with your financial institution or province</h4>
               <p>As you are signing in through the financial institution or province, you will need to reset your password with that institution or province that you deal with.</p>
           </div>
-      </div>
+      </div> -->
 
       <h2 id="h_2">Lost User ID</h2>
       <p>How you recover a password or user ID depends on how you are registered to sign in:</p>
-      <div class="cnjnctn-type-or cnjnctn-sm">
+      <details>
+        <summary>Sign-in with a CRA user ID</summary>
+        <h3>To verify your identify, you will need:</h3>
+        <ul class="fa-ul">
+          <li><span class="fas fa-check text-success fa-li"></span> Social Insurance Number</li>
+          <li><span class="fas fa-check text-success fa-li"></span> Date of birth</li>
+          <li><span class="fas fa-check text-success fa-li"></span> Amount you entered on line 15000 of your income tax and benefit return, from one of the previous two tax years</li>
+        </ul>
+        <h3>Steps to create a new password</h3>
+        <p>Follow these steps to create a new password for your account:</p>
+        <ol>
+          <li>Go to <a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">My Account for Individuals</a></li>
+          <li>Select "Sign in with your CRA user ID and password"</li>
+          <li>On the CRA sign-in page, select "Forgot your user ID?"</li>
+          <li>Follow the instructions to recover your User ID</li>
+        </ol>
+        <details>
+          <summary>Cannot recover a User ID for <strong>Represent a Client</strong> or <strong>Tax information web service</strong></summary>
+          <p>If you have forgotten your CRA user ID for either Represent a Client or the Tax information web service, you cannot recover it.</p>
+          <p>If you lose your Uesr ID, you have to register again for a new sign-in credential.</p>
+        </details>
+      </details>
+      <details>
+        <summary>Sign-in through your financial institution or province</summary>
+        <h3>CRA does not have your user ID</h3>
+        <p>When you use your online banking or provincial credential, the information you enter and the identity of the partner institution are not shared with the government service you are trying to access. Similarly, information about the government service being accessed is not shared with your sign-in partner. No personally identifying information or banking or provincial details are ever shared.</p>
+        <h3>Change your password with your financial institution or province</h3>
+        <p>As you are signing in through the financial institution or province, you will need to recover your user ID with that institution or province.</p>
+      </details>
+
+      <!-- <div class="cnjnctn-type-or cnjnctn-sm">
           <div class="cnjnctn-col">
               <h3 class="h4 mrgn-tp-sm text-muted"> Sign-in with a CRA ID and password<span class="wb-inv">: Option 1 of 2</span> </h3>
               <h4>To verify your identify, you will need:</h4>
@@ -247,7 +313,7 @@
               <h4>Change your password with your financial institution or province</h4>
               <p>As you are signing in through the financial institution or province, you will need to recover your user ID with that institution or province.</p>
           </div>
-      </div>
+      </div> -->
 
       <h2 id="h_3">Recover a revoked user ID or password</h2>
       <p>You may have received a notification informing you that a user ID and password you use to access CRA sign-in services have been revoked.</p>
@@ -280,352 +346,10 @@
       
 
       <h2 id="h_4">Locked out by security questions</h2>
-
+      <p>If you have been locked out after incorrectly answering security questions, or if you do not remember the answers to your security questions, you will have to call to authenticate and have us unlock your account for you.</p>
+      <p><a href="/en/revenue-agency/corporate/contact-information.html">Call the CRA to unlock your account</a>.</p></p>
     
-      <div class="wb-frmvld">
-        <form method="get">
-          <!--Smart question!-->
-          <div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
-            "noForm":true,
-            "renderas":"radio",
-            "base": { "live": true },
-            "noreqlabel": true,
-            "default": [{ "action": "addClass", "source":"#personal,#business,#non-resident,#trusts", "class": "hidden" },
-              { "action": "addClass", "source": "#wb-auto-12", "class": "checked"}]
-            }'>
-            <p>What type of account do you need a security code for?</p>
-            <ul>
-              <li data-wb-fieldflow='{ "action": "removeClass", "source":"#personal", "class": "hidden"}' checked="checked">My Account</li> <!--result-->
-              <li data-wb-fieldflow='{ "action": "removeClass", "source":"#business", "class": "hidden" }'>My Business Account</li>
-              <li data-wb-fieldflow='{ "action": "removeClass", "source":"#representatives", "class": "hidden"}'>Represent a Client</li>
-            </ul>
-        </form>
-      </div>
-    
-      <div id="personal" class="hidden">
-        <h2>Security code for My Account</h2>
-        <p>To recover My Account, you will need to get a security code. You can do this by phone or by mail.</p>
-    
-        <h3>By phone</h3>
-        <dl class="dl-horizontal">
-          <dt>Before you call</dt>
-          <dd>
-            <p>To verify your identity, you'll need</p>
-    
-            <div class="mrgn-tp-lg beforeCall" style="">
-                <label class="container-checks">Social Insurance Number
-                  <input class="btnCheck" type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container-checks">Full name and date of birth
-                  <input class="btnCheck" type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container-checks">Your complete address
-                  <input class="btnCheck" type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container-checks">Details from your account or an assessed return, notice of assessment, reassessment, or other tax document
-                  <input class="btnCheck" type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-    
-                <p><span id="check-message"><label class="label label-danger">You need all of the above to call</label></span></p>
-              </div>
-          </dd>
-          <dt>Telephone number</dt>
-          <dd><p><b>1-800-959-8281</b></p><p>Yukon, Northwest Territories and Nunavut:<br><b> 1-866-426-1527</b></p><p>Outside Canada and US:<br> <b>613-940-8495</b></p></dd>
-          <dt>Hours</dt>
-          <dd>
-    
-            <p
-              class="need-date"
-              data-day0-open=null
-            data-day0-close=null
-              data-day1-open=9
-              data-day1-close=21
-              data-day2-open=9
-              data-day2-close=21
-              data-day3-open=9
-              data-day3-close=21
-            data-day4-open=9
-            data-day4-close=21
-              data-day5-open=9
-              data-day5-close=21
-              data-day6-open=9
-              data-day6-close=17>
-    
-                              <span class="open-or-closed">I'm supposed to say open/closed based on brower time matching the set hours of operations that needs to be defined somewhere</span></p><p>Expected wait time: 1 hour or less</p>
-    
-    
-            <details>
-              <summary>Opening hours (tax season)</summary>
-              <div class="row">
-                <div class="">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="wb-inv">Day</th>
-                        <th class="wb-inv">Hours</th>
-                        <th class="wb-inv">Wait times</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Mon</td>
-                        <td>9 am to 9 pm</td>
-                        <td>Long wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Tue</td>
-                        <td>9 am to 9 pm</td>
-                        <td>Long wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Wed</td>
-                        <td>9 am to 9 pm</td>
-                        <td>Medium wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Thu</td>
-                        <td>9 am to 9 pm</td>
-                        <td>Short wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Fri</td>
-                        <td>9 am to 9 pm</td>
-                        <td>Short wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Sat</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Short wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Sun</td>
-                        <td>Closed</td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <h4>Next 3 holiday closures:</h4>
-              <ul>
-                <li>March 30 (Volunteering)</li>
-                <li>April 2 (Bunny rabbits)</li>
-                <li>May 21 (Mayday)</li>
-              </ul>
-            </details>
-          </dd>
-        </dl>
-        <details>
-               <summary>If you are contacting us on someone else's behalf</summary>
-                 <p>If you wish to deal with the CRA on someone else’s behalf, you must be an authorized representative:</p>
-                 <ul>
-                  <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/authorizing-a-representative-overview.html">authorizing or cancelling a representative (personal)</a></li>
-                      <li>you will need to use <a href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html">Represent a Client</a></li>
-                 </ul>
-    
-             </details>
-    
-          </dd>
-        </dl>
-    
-        <h3>By mail</h3>
-        <p>To get a security code by mail, complete the application form online:</p>
-        <ul>
-          <li><a href="https://apps1.ams-sga.cra-arc.gc.ca/gol-ged/awsc/amss/enrol/start?prog=mima">Register online and get your security code by mail</a></li>
-        </ul>
-      </div>
-    
-      <div id="business" class="hidden">
-    
-        <h2>Security code for My Business Account</h2>
-        <p>To recover My Business Account, you will need to get a security code. You can do this by phone or by mail.</p>
-    
-        <h3>By phone</h3>
-        <dl class="dl-horizontal">
-          <dt>Before you call</dt>
-          <dd>
-            <p>To verify your identity, you'll need</p>
-              <label class="container-checks">Business things
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container-checks">Four cats
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container-checks">and an elephant
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-    
-          </dd>
-          <dt>Telephone number</dt>
-          <dd><p>1-800-959-8281</p><p>Outside Canada and US: 613-940-8495</p><p>Yukon, Northwest Territories and Nunavut: 1-866-426-1527</p></dd>
-          <dt>Hours</dt>
-          <dd>
-            <p><label class="label label-success">Open until 5 pm</label> | Expected wait time: 1 hour or less</p>
-            <details>
-              <summary>Opening hours</summary>
-              <div class="row">
-                <div class="col-lg-6">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="wb-inv">Day</th>
-                        <th class="wb-inv">Hours</th>
-                        <th class="wb-inv">Wait times</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Mon</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Long wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Tue</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Long wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Wed</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Medium wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Thu</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Short wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Fri</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Short wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Sat</td>
-                        <td>Closed</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Sun</td>
-                        <td>Closed</td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <h4>Next 3 holiday closures:</h4>
-              <ul>
-                <li>March 30 (Volunteering)</li>
-                <li>April 2 (Bunny rabbits)</li>
-                <li>May 21 (Mayday)</li>
-              </ul>
-            </details>
-    
-          </dd>
-        </dl>
-    
-    
-      </div>
-    
-      <div id="representatives" class="hidden">
-    
-        <h2>Security code for Represent a Client/h2>
-        <p>To recover Represent a Client, you will need to get a security code. You can do this by phone or mail.</p>
-    
-        <h3>By phone</h3>
-        <dl class="dl-horizontal">
-          <dt>Telephone number</dt>
-          <dd><p>1-800-959-8281</p><p>Outside Canada and US: 613-940-8495</p><p>Yukon, Northwest Territories and Nunavut: 1-866-426-1527</p></dd>
-          <dt>Hours</dt>
-          <dd>
-            <p><label class="label label-success">Open until 5 pm</label> | Expected wait time: 1 hour or less</p>
-            <details>
-              <summary>Opening hours</summary>
-              <div class="row">
-                <div class="col-lg-6">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="wb-inv">Day</th>
-                        <th class="wb-inv">Hours</th>
-                        <th class="wb-inv">Wait times</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Mon</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Long wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Tue</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Long wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Wed</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Medium wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Thu</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Short wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Fri</td>
-                        <td>9 am to 5 pm</td>
-                        <td>Short wait times</td>
-                      </tr>
-                      <tr>
-                        <td>Sat</td>
-                        <td>Closed</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Sun</td>
-                        <td>Closed</td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <h4>Next 3 holiday closures:</h4>
-              <ul>
-                <li>March 30 (Volunteering)</li>
-                <li>April 2 (Bunny rabbits)</li>
-                <li>May 21 (Mayday)</li>
-              </ul>
-            </details>
-            <details>
-              <summary>Tired of waiting on the phone line?</summary>
-              <ul>
-                <li><a href="">Benefits of signing up for an online account</a></li>
-                <li><a href="">Get help recovering your account</a></li>
-              </ul>
-            </details>
-          </dd>
-        </dl>
-    
-        <h3>By mail</h3>
-        <ol>
-          <li>Complete the <a href="https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/rc325/rc325-18e.pdf">Address change request (RC325)</a></li>
-          <li>Mail the completed form to the address on the form</li>
-        </ol>
-        <p>Note that you can change someone else’s address at the same time as yours, such as your spouse’s or common-law partner’s. Your letter must also include the name, social insurance number, and signature of that individual.</p>
-      </div>
-    
-    </div>
-    
-    <div class="clearfix"></div>
+      
     
     <div class="pagedetails">
     <div class="row">

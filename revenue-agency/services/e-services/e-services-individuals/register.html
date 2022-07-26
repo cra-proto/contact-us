@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-<title>My Account for individuals - Canada.ca</title>
+<title>Register for My Account for Individuals - Canada.ca</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <!-- Meta data -->
 <!-- Meta data-->
@@ -40,7 +40,10 @@
 					href: "https://www.canada.ca/en/revenue-agency.html"
 				},{
 					title: "Sign-in to a CRA account",
-					href: "https://cra-proto.github.io/contact-us/revenue-agency/services/e-services/cra-login-services.html"
+					href: "../../../../sign-in/index.html"
+				},{
+					title: "Sign in to My Account for Individuals",
+					href: "account-individuals-co.html"
 				}],
 				search: true,
 				siteMenu: true,
@@ -170,9 +173,27 @@
                     <div class="cnjnctn-type-or cnjnctn-md">
                       <div class="cnjnctn-col">
                         <h2 class="h3 mrgn-tp-sm">Your first choice is how you would like to sign in every time you use My Account</h2>
-                        <div class="mrgn-bttm-md mrgn-tp-lg"><a class="btn btn-default btn-lg btn-block" href="myaccount/cra-login.html"><span class="h3"><span class="fab fa-canadian-maple-leaf fa-lg mrgn-rght-sm"></span>Create a new CRA login username and password</span></a></div>
-                        <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href="../../../../myaccount/sign-in-partners-cra.html"><span class="h3"><span class="fas fa-university fa-lg mrgn-rght-sm"></span>Register to sign in through your financial institution (Sign-in partner)</span></a></div>
-                        <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href=""><span class="h3"><span class="fas fa-id-card fa-lg mrgn-rght-sm"></span>Register to sign in through a BC Services Card or MyAlberta Digital ID</span></a></div>
+                        <div class=" mrgn-bttm-md brdr-bttm">
+                          <h3>Option 1: Create an ID and password</h3>
+                          <div class="mrgn-bttm-md mrgn-tp-lg"><a class="btn btn-default btn-lg btn-block" href="myaccount/cra-login.html"><span class="h3"><span class="fab fa-canadian-maple-leaf fa-lg mrgn-rght-sm"></span>Create a CRA user ID</span></a></div>
+                        </div>
+                        <div class=" mrgn-bttm-md brdr-bttm">
+                          <h3>Option 2: Register through your bank or financial institution</h3>
+                          <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href="../../../../myaccount/sign-in-partners-cra.html"><span class="h3"><span class="fas fa-university fa-lg mrgn-rght-sm"></span>Register with a Sign-in partner</span></a></div>
+                          <p>You must have an account with the financial institution. Your banking ID and password is never shared with the CRA and your bank will not have access to your CRA My Account.</p>
+                          <details>
+                            <summary tabindex="0" class="text-center" id="wb-auto-1" role="button" aria-expanded="false">View list of Sign-In Partners</summary>
+                              <section data-ajax-replace="https://www.canada.ca/content/dam/cra-arc/includes/chooser-page-logos.txt#logos-en"></section> 
+                            </details>
+                        </div>
+                        <div class="">
+                          <h3>Option 3: Register through your province</h3>
+                          <div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href=""><span class="h3"><span class="fas fa-id-card fa-lg mrgn-rght-sm"></span>Register with a provincial ID</span></a></div>
+                          <p>Currently, only BC Services Card or MyAlberta Digital ID are supported. You must have an account with the province's website to register this way.</p>
+                          <!-- <details>
+                            <summary></summary>
+                          </details> -->
+                        </div>
                       </div>
 
                     </div>
