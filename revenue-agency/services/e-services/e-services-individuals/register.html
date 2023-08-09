@@ -218,10 +218,12 @@
 						<!-- <h3 class="h4 mrgn-tp-sm text-muted">Using one of our Sign-In Partner banks or credit unions <span class="wb-inv">Option 1 of 2</span></h3-->
 						<div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href="../../../../myaccount/sign-in-partners-cra.html"><span class="h3"><span class="fas fa-university fa-lg mrgn-rght-sm"></span>Register with a Sign-in partner</span></a></div>
 						<p>You must have an existing account with one of our <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">Sign-in Partner banks or credit <span class="nowrap">unions<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>.</p>
-						<details>
+						<p>Your information, banking credentials and tax information is <a class="wb-lbx" role="button" aria-controls="sign-in-partner-privacy" href="#sign-in-partners">never <span class="nowrap">shared<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>.</p>
+						<p>On a <strong>shared device</strong> <a class="wb-lbx" role="button" aria-controls="shared-device" href="#sign-in-partners">do not use auto-complete for your banking <span class="nowrap">sign in<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>.</p>
+						<~--details>
 							<summary tabindex="0" id="wb-auto-1" role="button" aria-expanded="false">Your banking credentials and tax information are never shared</summary>
 							<p>The information you enter (e.g. username, password) and the identity of the financial institution are not shared with the Government of Canada. Similarly, none of your personal tax information will be shared with your financial institution. No personally identifying information or banking details are ever shared.</p>
-						</details>
+						</details-->
 						<!--details>
 							<summary tabindex="0" id="wb-auto-1" role="button" aria-expanded="false">My Account details are never shared with your financial institution</summary>
 							
@@ -231,6 +233,7 @@
 						<!-- <h3 class="h4 mrgn-tp-sm text-muted">Create a CRA ID and password <span class="wb-inv">Option 2 of 2</span></h3-->
 						<div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href="myaccount/cra-login.html"><span class="h3"><span class="fab fa-canadian-maple-leaf fa-lg mrgn-rght-sm"></span>Create a CRA user ID</span></a></div>
 						<p>Create a new CRA user ID and password that can be used with My Account and other CRA sign-in services.</p>
+						<p>How to choose <a class="wb-lbx" role="button" aria-controls="sign-in-partner-privacy" href="#sign-in-partners">memorable security <span class="nowrap">questions<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>.</p>
 					</li>
 					<!-- <li class="cnjnctn-col">
 						<h3 class="h4 mrgn-tp-sm text-muted">Register through your province <span class="wb-inv">Option 3 of 3</span></h3>
@@ -282,23 +285,20 @@
   
 		<div class="panel-body">	       
                 <dl>
-                <dt>Skip registration</dt>			   
-			<dd><span class="text-muted"><small>If you have an account with a participating province, you do <strong>not</strong> need to register or wait 7-14 days for a security code to use My Account.</small></span></dd>
+                <dt>Skip registration: Sign in with your province</dt>			   
+			<dd><span class="text-muted"><small>If you have an account with a <strong>participating</strong> province, you do <strong>not</strong> need to register and wait 7-14 days for a security code to use My Account.</small></span></dd>
                 <dt>Participating provinces</dt>			    
 			<dd><span class="text-muted"><small>You can sign in with:
 			<ul><li>An Alberta.ca Account</li>
 			<li>A BC Service Card</li></ul>
 			</small></span></dd>
 		<div class="mrgn-bttm-md"><a class="btn btn-default btn-lg btn-block" href=""><span class="h3"><span class="fas fa-id-card fa-lg mrgn-rght-sm"></span>Sign in with a provincial ID</span></a></div>
-			<details><summary>When you <strong>cannot</strong> use a provincial partner</summary>
-			<h3>You <strong>cannot</strong> use a provincial partner with:</h3>
-				<ul>
-<li>My Business Account or Represent a Client</li>
-					<li>Express NOA</li>
-					<li>Auto-fill My Return</li>
-					
-				</ul>
-			</details>
+			<p>You <strong>cannot</strong> use a provincial partner with:</p>
+			<ul>
+				<li>My Business Account or Represent a Client</li>
+				<li>Express NOA</li>
+				<li>Auto-fill My Return</li>	
+			</ul>
                
                 </dl>
 			</div>
@@ -365,6 +365,38 @@
 		<div data-ajax-replace=""https://www.canada.ca/content/dam/cra-arc/includes/chooser-page-logos.txt#logos-en">
 			<p><a href=""https://www.canada.ca/content/dam/cra-arc/includes/chooser-page-logos.txt#logos-en">List of Sign-in Partner banks and credit unions</a></p>
 		</div>
+	</div>						
+</section>
+
+<section id="sign-in-partner-privacy" class="mfp-hide modal-dialog modal-content overlay-def">
+	<header class="modal-header">
+		<h2 class="modal-title">Your banking credentials and tax information are never shared</h2>
+	</header>
+	<div class="modal-body">
+		<p>The information you enter (e.g. username, password) and the identity of the financial institution are not shared with the Government of Canada.</p>
+		<p>Similarly, none of your personal tax information will be shared with your financial institution.</p>
+		<p>No personally identifying information or banking details are ever shared.</p>
+	</div>						
+</section>
+
+<section id="memorable-sq" class="mfp-hide modal-dialog modal-content overlay-def">
+	<header class="modal-header">
+		<h2 class="modal-title">Choose memorable security questions</h2>
+	</header>
+	<div class="modal-body">
+		<p>You will be asked to determine 5 security questions and answers that will be used to recover your account if you forget your password.</p>
+		<p>You may want to choose questions that have more factual answers, instead of questions that can change over time or can have more than one answer.</p>
+		<p>For example, it may be easier to remember the make of your first car, instead of your favourite food or the name of a childhood friend that you may sometimes write as a nickname or with their last name.</p>
+	</div>						
+</section>
+
+<section id="shared-device" class="mfp-hide modal-dialog modal-content overlay-def">
+	<header class="modal-header">
+		<h2 class="modal-title">Shared devices: don't use auto-complete for banking credentials</h2>
+	</header>
+	<div class="modal-body">
+		<p>If you register for My Account on a device you share with other people, make sure you don't use your browser's auto-complete for your online banking sign in.</p>
+		<p>If you sign in with someone else's banking credentials and link your SIN number to that, the other person will have access to your account.</p>
 	</div>						
 </section>
 
